@@ -1,0 +1,35 @@
+﻿<Window x:Class="OkulOtomasyonu.Windows.Giris"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OkulOtomasyonu.Windows"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Giris" Height="400" Width="250" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FF1293A8" Offset="0.666"/>
+            <GradientStop Color="#FF093036" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid Margin="30,83,19,146">
+        <Rectangle Fill="#FFEBF1F1" RenderTransformOrigin="0.5,0.5" Margin="-17,0,-8,0" RadiusY="16.432" RadiusX="16.432" Height="150" VerticalAlignment="Bottom"/>
+        <materialDesign:PackIcon Kind="Home" Foreground="White" Margin="44,-50,45,150" Height="63" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+        <Button Margin="177,-82,-18,211" Background="{x:Null}" BorderBrush="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionAccentButton}" Height="34" Width="Auto" VerticalAlignment="Bottom" Click="Button_Click">
+            <materialDesign:PackIcon Kind="PowerStandby" Foreground="White" Height="19" Width="20"/>
+        </Button>
+        <StackPanel Margin="-29,0,-18,0">
+            <TextBox Height="28" Margin="34,26,72,0" materialDesign:HintAssist.Hint=" Kullanıcı Adı" Foreground="#FF0D88EA" SelectionBrush="#FF0D88EA"  BorderBrush="#FF0D88EA" CaretBrush="#FF0D88EA" FontWeight="Bold" />
+            <PasswordBox Height="29" Margin="34,26,72,10" materialDesign:HintAssist.Hint=" Şifre" Foreground="#FF0D88EA" SelectionBrush="#FF0D88EA"  BorderBrush="#FF0D88EA" CaretBrush="#FF0D88EA" FontWeight="Bold"/>
+            <Button Background="#FF426A89" Height="28" Margin="34,0,72,0" BorderBrush="#FF0D88EA" Click="Button_Click_1">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Login" Width="34" RenderTransformOrigin="0.817,0.688" Height="18"/>
+                    <TextBlock Text="Giriş" Foreground="White" Width="63" Height="21" RenderTransformOrigin="0.463,-0.278"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
