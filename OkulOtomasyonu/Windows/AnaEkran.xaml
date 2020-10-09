@@ -9,12 +9,13 @@
         Title="AnaEkran" Height="720" Width="1200" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary>
-            
+
             <Storyboard x:Key="menuAc">
                 <!---tetiklenecek olayda hedef nesnenin genişliği değişecek-->
                 <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="menuGrid">
                     <EasingDoubleKeyFrame KeyTime="0" Value="70"/>
-                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>       <!--yarımm saniye içinde acıldığında genisliği 70den 200-->
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="200"/>
+                    <!--yarımm saniye içinde acıldığında genisliği 70den 200-->
                 </DoubleAnimationUsingKeyFrames>
             </Storyboard>
 
@@ -27,7 +28,7 @@
 
         </ResourceDictionary>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"/>
@@ -52,17 +53,25 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
+
             <materialDesign:PackIcon Kind="School" Grid.Column="0" Foreground="White" Height="46" Width="56" Grid.ColumnSpan="2"/>
+
             <TextBlock Text="Okul Otomasyonu" Foreground="White" Grid.Column="1" FontSize="25" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8.8,8,9.6,8.6" FontWeight="Bold"/>
+
             <Rectangle Grid.Column="2" RadiusX="10" RadiusY="10" Fill="#FFC2FDFA" Margin="0.4,9,0.2,9.6"/>
             <TextBlock Text="PRO" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center" Foreground="DarkBlue" FontWeight="Bold" Margin="18.4,17,19.2,16.6"/>
+
             <materialDesign:PackIcon Kind="EmailOutline" Grid.Column="3" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Grid.ColumnSpan="4" Margin="408.4,4,31.4,3.6"/>
             <materialDesign:PackIcon Kind="MessageOutline" Grid.Column="5" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Grid.ColumnSpan="2" Margin="0.4,6,47.6,3.6"/>
             <materialDesign:PackIcon Kind="TshirtCrewOutline" Grid.Column="6" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" />
             <materialDesign:PackIcon Kind="Menu" Grid.Column="6" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Grid.ColumnSpan="3" Margin="47.6,4,47.6,3.6" />
             <materialDesign:PackIcon Kind="WindowMinimize" Grid.Column="7" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Grid.ColumnSpan="2" Margin="47.6,4,0.6,3.6" />
             <materialDesign:PackIcon Kind="WindowMaximize" Grid.Column="8" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Grid.ColumnSpan="3" Margin="47.6,2,47.6,3.6" />
-            <materialDesign:PackIcon Kind="PowerStandby" Grid.Column="10" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="Auto" Margin="0.4,0,-0.4,3.6" />
+            <Button Click="Button_Click_1" Grid.Column="9" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderBrush="{x:Null}" Background="{x:Null}"
+                     Style="{StaticResource MaterialDesignFloatingActionAccentButton}" Grid.ColumnSpan="2" Margin="0,-7" Width="60" Height="63">
+                <materialDesign:PackIcon Kind="PowerStandby" Grid.Column="10" Height="26" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Width="26" Margin="0.4,0,-0.4,0" />
+
+            </Button>
         </Grid>
 
         <Grid Grid.Row="1">
@@ -78,6 +87,7 @@
                 <ColumnDefinition Width="120*"/>
                 <ColumnDefinition Width="597*"/>
             </Grid.ColumnDefinitions>
+
             <Rectangle Fill="#FF2196F3" Grid.ColumnSpan="7" Margin="0,0,-0.4,0.2" Grid.RowSpan="2" />
             <Button Grid.Column="1" Height="Auto" Margin="0.2,10,0.2,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.RowSpan="2" />
             <StackPanel Grid.Column="1" Margin="0.2,0,5.2,0.2" Grid.RowSpan="2">
@@ -85,19 +95,19 @@
                 <TextBlock Text="Anasayfa" Foreground="White" TextAlignment="Center" Margin="0,-10,-0.6,10" FontFamily="./#Sofia Pro"  />
             </StackPanel>
 
-            <Button Grid.Column="2" Height="Auto" Margin="4.8,10,0.4,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.RowSpan="2" />
+            <Button Name="ogrencibtn" Grid.Column="2" Height="Auto" Margin="4.8,10,0.4,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.RowSpan="2" Click="ogrencibtn_Click" />
             <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Margin="110.2,0,0.4,0.2" Grid.RowSpan="2">
                 <materialDesign:PackIcon Kind="User" HorizontalAlignment="Stretch" Height="80"  Foreground="White" Margin="26,0,27.4,0" Width="Auto" />
                 <TextBlock Text="Öğrenciler" Foreground="White" TextAlignment="Center" Margin="0,-10,-0.6,10" FontFamily="./#Sofia Pro"  />
             </StackPanel>
 
-            <Button Grid.Column="3" Height="Auto" Margin="4.6,10,118.8,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <Button Grid.Column="3" Height="Auto" Margin="4.6,10,118.8,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.ColumnSpan="2" Grid.RowSpan="2" Click="Button_Click" />
             <StackPanel Grid.Column="2" Grid.ColumnSpan="3" Margin="118.8,0,118.8,0.2" Grid.RowSpan="2">
                 <materialDesign:PackIcon Kind="Book" HorizontalAlignment="Stretch" Height="80"  Foreground="White" Margin="26,0,27.4,0" Width="Auto" />
                 <TextBlock Text="Dersler" Foreground="White" TextAlignment="Center" Margin="0,-10,-0.6,10" FontFamily="./#Sofia Pro"  />
             </StackPanel>
 
-            <Button Grid.Column="4" Height="Auto" Margin="4.6,10,118.8,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <Button Name="derslerbtn" Grid.Column="4" Height="Auto" Margin="4.6,10,118.8,10.2" Background="#FF2196F3" BorderBrush="#FF2196F3" Grid.ColumnSpan="2" Grid.RowSpan="2" />
             <StackPanel Grid.Column="3" Grid.ColumnSpan="3" Margin="118.8,0,118.8,0.2" Grid.RowSpan="2">
                 <materialDesign:PackIcon Kind="Teacher" HorizontalAlignment="Stretch" Height="80"  Foreground="White" Margin="26,0,27.4,0" Width="Auto" />
                 <TextBlock Text="Öğretmenler" Foreground="White" TextAlignment="Center" Margin="0,-10,-0.6,10" FontFamily="./#Sofia Pro"  />
@@ -123,13 +133,23 @@
                 </Grid.RowDefinitions>
                 <ToggleButton Style="{DynamicResource MaterialDesignHamburgerToggleButton}" Name="menuButton" Click="menuButton_Click" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="White" Checked="menuButton_Checked"/>
 
+                <Grid Grid.Row="1" Name="MenuUserControlGrid">
+
+
+                </Grid>
+
             </Grid>
+
+            <Grid Name="UserControlGrid" Grid.Column="1">
+
+            </Grid>
+
         </Grid>
 
         <Grid Grid.Row="4">
             <Rectangle Fill="AliceBlue"/>
         </Grid>
-        
-        
+
+
     </Grid>
 </Window>

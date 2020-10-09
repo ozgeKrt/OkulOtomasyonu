@@ -17,7 +17,6 @@ C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\bin\Debug\Materia
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\bin\Debug\Microsoft.Xaml.Behaviors.xml
-C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojAssemblyReference.cache
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\MainWindow.g.cs
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\Windows\Giris.g.cs
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\App.g.cs
@@ -37,3 +36,10 @@ C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOto
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\Windows\AnaEkran.g.cs
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\Kaynaklar\Fontlar.baml
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\Windows\AnaEkran.baml
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Menu\OgrencilerMenuUserControl.g.cs
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Menu\OgrencilerMenuUserControl.baml
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\OkulOtomasyonu.csprojAssemblyReference.cache
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Menu\DerslerMenuUserControl.g.cs
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Menu\DerslerMenuUserControl.baml
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Ogrenciler\OgrenciGoruntulemeUserControl.g.cs
+C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\obj\Debug\UserControls\Ogrenciler\OgrenciGoruntulemeUserControl.baml

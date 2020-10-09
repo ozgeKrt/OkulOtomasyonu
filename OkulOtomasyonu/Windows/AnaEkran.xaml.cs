@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OkulOtomasyonu.Altyapi.PencereIslemleri;
+using OkulOtomasyonu.UserControls.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,6 +59,21 @@ namespace OkulOtomasyonu.Windows
 
             }
             menuKapaliMi = !menuKapaliMi; //menukapalımı: false ise true cevirir
+        }
+
+        private void ogrencibtn_Click(object sender, RoutedEventArgs e)
+        {
+            UserControlIslemleri.UserControlCagirma(new OgrencilerMenuUserControl(), MenuUserControlGrid);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UserControlIslemleri.UserControlCagirma(new DerslerMenuUserControl(), MenuUserControlGrid);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);    //cikis butonu
         }
     }
 }

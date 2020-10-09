@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="OkulOtomasyonu.UserControls.Menu.OgrencilerMenuUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:OkulOtomasyonu.UserControls.Menu"
+             mc:Ignorable="d" 
+             d:DesignHeight="425" d:DesignWidth="200">
+    <Grid>
+        <ListView x:Name="ListViewMenu" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" PreviewMouseDown="ListViewMenu_PreviewMouseDown">
+
+            <ListViewItem Name="ogrenciGoruntuleme" Height="60">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Person" Foreground="White" Height="54" Width="54"/>
+                    <TextBlock Text="Öğrenci Görüntüleme" FontFamily="/OkulOtomasyonu;component/Assets/Fontlar/#Sofia Pro"/>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem Name="devamsizlik" Height="60">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="RunFast" Foreground="White" Height="54" Width="54"/>
+                    <TextBlock Text="Devamsızlık Görüntüleme" FontFamily="/OkulOtomasyonu;component/Assets/Fontlar/#Sofia Pro"/>
+                </StackPanel>
+            </ListViewItem>
+
+            <ListViewItem Name="notGoruntuleme" Height="60">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Paper" Foreground="White" Height="54" Width="54"/>
+                    <TextBlock Text="Not Görüntüleme" FontFamily="/OkulOtomasyonu;component/Assets/Fontlar/#Sofia Pro"/>
+                </StackPanel>
+            </ListViewItem>
+
+        </ListView>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+From f676a8c03732664b0379f16ab6482c8f7d1357c1 Mon Sep 17 00:00:00 2001
+From: ozge <ozgekurt@skoptek.com>
+Date: Fri, 2 Oct 2020 13:34:30 +0300
+Subject: [PATCH] Revert "update belge"
+
+This reverts commit 1747c868c1a0ab53653d4611039be6bbaa7b6c13.
+---
+ Yeni Metin Belgesi.txt | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 Yeni Metin Belgesi.txt
+
+diff --git a/Yeni Metin Belgesi.txt b/Yeni Metin Belgesi.txt
+deleted file mode 100644
+index 7ae24fc..0000000
+--- a/Yeni Metin Belgesi.txt	
++++ /dev/null
+@@ -1 +0,0 @@
+-ozgeozgeozgeozge
+\ No newline at end of file
+-- 
+2.28.0.windows.1
+

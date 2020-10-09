@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Ozge\Desktop\Trials\WPF\OkulOtomasyonu\OkulOtomasyonu\App.xaml
-5-490442795
+8310239631
 
-8-1967362691
+12362850194
 23-1718030633
-Kaynaklar\Fontlar.xaml;Kaynaklar\MaterialDesign.xaml;MainWindow.xaml;Windows\AnaEkran.xaml;Windows\Giris.xaml;
+Kaynaklar\Fontlar.xaml;Kaynaklar\MaterialDesign.xaml;MainWindow.xaml;UserControls\Menu\DerslerMenuUserControl.xaml;UserControls\Menu\OgrencilerMenuUserControl.xaml;UserControls\Ogrenciler\OgrenciGoruntulemeUserControl.xaml;Windows\AnaEkran.xaml;Windows\Giris.xaml;
 
 True
 
